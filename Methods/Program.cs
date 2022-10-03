@@ -88,6 +88,15 @@ namespace Methods
             shieldMin = 0.0f;
             shieldFull = 10.0f;
             lavaDMG = -1000;
+
+            Console.Clear();
+
+            Console.WriteLine(title + " by " + studio);
+            Console.WriteLine();
+            Console.WriteLine("You Died!");
+            Console.WriteLine("Prepare for respawn");
+
+            Console.ReadKey(true);
         }
 
 
@@ -95,8 +104,6 @@ namespace Methods
         {
             Random rand = new Random();
             int check = rand.Next(1, 7);
-            Console.WriteLine(check);
-            Console.ReadKey(true);
             if (check == 1)
             {
                 //player kills enemy
@@ -161,7 +168,7 @@ namespace Methods
 
             Console.WriteLine(title + " by " + studio);
             Console.WriteLine();
-            Console.WriteLine("Score: " + score + " | HP: " + HP + " | Shield: " + shield.ToString("0.00") + " | Lives: " + lives);
+            Console.WriteLine("Score: " + score + " | HP: " + HP + " | Shield: " + shield.ToString("0.00") + " | Lives: " + lives + " | Score Multiplyer: " + scoreMultiplier);
             Console.WriteLine();
 
             Console.ReadKey(true);
