@@ -51,6 +51,7 @@ namespace Methods
             shieldFull = 10.0f;
             lavaDMG = -100;
 
+            ShowHud();
             RandomizedUpdate();
             RandomizedUpdate();
             RandomizedUpdate();
