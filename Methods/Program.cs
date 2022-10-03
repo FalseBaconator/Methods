@@ -62,7 +62,6 @@ namespace Methods
             RandomizedUpdate();
             RandomizedUpdate();
             Update(0, lavaDMG, 0, 0, 0);
-            ShowHud();
 
             Console.ReadKey(true);
         }
@@ -95,7 +94,7 @@ namespace Methods
         static void RandomizedUpdate()
         {
             Random rand = new Random();
-            int check = rand.Next(1, 6);
+            int check = rand.Next(1, 7);
             Console.WriteLine(check);
             Console.ReadKey(true);
             if (check == 1)
